@@ -1,0 +1,18 @@
+{
+    "name": "medicalsupplymanager-backend",
+    "version": "1.0.0",
+    "description": "backend server for medical supply manager application.",
+    "main": "src/server.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bytorbrynden/MedicalSupplyManager-Backend.git"
+    },
+    "author": "Brynden Bielefeld",
+    "license": "ISC",
+    "dependencies": {
+        "better-sqlite3": "^8.0.1",
+        "body-parser": "^1.20.1",
+        "cors": "^2.8.5",
+        "express": "^4.18.2"
+    }
+}

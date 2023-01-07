@@ -1,0 +1,15 @@
+{
+    "host": {
+        "name": "localhost",
+        "port": 8000
+    },
+    "admin": {
+        "name": "admin",
+        "pass": "admin",
+        "email": "",
+        "badge": ""
+    },
+    "database": {
+        "filename": "data/Inventory.db"
+    }
+}
