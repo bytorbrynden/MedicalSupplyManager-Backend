@@ -6,11 +6,11 @@ const dataHelper = require("../helpers/database.helper.js");
 module.exports = (app) => {
     // START: GET request routes
     router.get("/view/all", (request, response) => {
-        response.send(dataHelper.select("SELECT * FROM transactions"));
+        response.send(dataHelper.select("SELECT transactions.*, product.product_name FROM transactions INNER JOIN product ON transactions.product_id = product.product_id"));
     });
 
     router.get("/view/all/:t_type", (request, response) => {
-        response.send(dataHelper.select("SELECT * FROM transactions WHERE t_type=" + request.params.t_type));
+        response.send(dataHelper.select("SELECT transactions.*, product.product_name FROM transactions INNER JOIN product ON transactions.product_id = product.product_id WHERE transactions.t_type=" + request.params.t_type));
     });
 
     router.get("/view/:transaction_id", (request, response) => {
