@@ -20,7 +20,6 @@ module.exports = {
 
         return results;
     },
-
     insert: (table, data) => {
         var columnsArr = [ ];
         var valuesArr = [ ];
