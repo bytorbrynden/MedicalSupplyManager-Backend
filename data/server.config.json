@@ -10,6 +10,6 @@
         "badge": ""
     },
     "database": {
-        "filename": "data/Inventory.db"
+        "filename": "data/data.db"
     }
 }
