@@ -10,6 +10,7 @@ const router  = express.Router();
 // const postRouters = require("./post/index.js");
 
 const transactionsRouter = require("./transactions.router.js");
+const productsRouter     = require("./products.router.js");
 
 module.exports = (app) => {
     // Log a message for every request to the server.
@@ -29,6 +30,7 @@ module.exports = (app) => {
     // app.use(postRouters(app)); // Configure application to use appropriate router for POST requests.
 
     app.use("/transactions", transactionsRouter(app));
+    app.use("/products", productsRouter(app));
 
     return router;
 };
